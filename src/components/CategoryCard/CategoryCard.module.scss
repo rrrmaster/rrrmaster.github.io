@@ -1,0 +1,26 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.card {
+	background-color: white;
+    flex: 0 0 30%;
+	height: 400px;
+	border-radius: 1rem;
+	margin: 10px 0;
+
+	overflow: hidden;
+	div 
+	{
+		background-color:yellowgreen;
+		height: 60%;
+	}
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    width: 100%;
+	list-style: none;
+
+}
