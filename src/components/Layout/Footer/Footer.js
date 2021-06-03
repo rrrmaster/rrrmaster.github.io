@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from "gatsby";
 
-const Footer = ({ }) => {
+const Footer = () => {
     return (
         <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
             <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">

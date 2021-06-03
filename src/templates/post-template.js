@@ -1,12 +1,16 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
+import "katex/dist/katex.min.css"
 const PageTemplate = ({ data, pageContext }) => {
 	return (
 		<Layout title={data.mdx.fields.name}>
-			<MDXRenderer>{data.mdx.body}</MDXRenderer>
+            <MDXProvider>
+			    <MDXRenderer>{data.mdx.body}</MDXRenderer>
+            </MDXProvider>
 		</Layout>
 	)
 }

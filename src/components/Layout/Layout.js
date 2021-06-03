@@ -2,10 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Header from './Header'
 import Footer from './Footer'
-import useTheme from '../../hooks/use-dark-mode';
 
 const Layout = ({ children, title, description, socialImage = '' }) => {
-	const [theme, themeToggler] = useTheme();
 	
 	return (
 		<div>
@@ -15,7 +13,7 @@ const Layout = ({ children, title, description, socialImage = '' }) => {
 			</Helmet>
 			<Header/>
 			<section >
-				<div>
+				<div className= "container min-h-screen md:mx-10">
 					{children}
 				</div>
 			</section>

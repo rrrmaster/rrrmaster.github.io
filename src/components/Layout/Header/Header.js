@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "gatsby";
 
-const Header = ({ }) => {
+const Header = () => {
     return (
         <nav class="bg-white shadow" role="navigation">
             <div class="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap">
@@ -24,10 +24,16 @@ const Header = ({ }) => {
                 <div class="w-full md:w-auto md:flex-grow md:flex md:items-center">
                     <ul class="flex flex-col mt-4 -mx-4 pt-4 border-t md:flex-row md:justify-end md:items-center md:mx-0 md:mt-0 md:pt-0 md:mr-4 lg:mr-8 md:border-0">
                         <li>
-                            <Link activeClassName="text-purple-600" className="block px-4 py-1 md:p-2 lg:px-4" to="/" title="Link">소개</Link>
+                            <Link activeClassName="text-purple-600" className="block px-4 py-1 md:p-2 lg:px-4" to="/about" title="Link">소개</Link>
                         </li>
                         <li>
                             <Link activeClassName="text-purple-600" className="block px-4 py-1 md:p-2 lg:px-4" to="/blog" title="Active Link">강좌</Link>
+                        </li>
+                        <li>
+                            <Link activeClassName="text-purple-600" className="block px-4 py-1 md:p-2 lg:px-4" to="/tag" title="Active Link">태그</Link>
+                        </li>
+                        <li>
+                            <Link activeClassName="text-purple-600" className="block px-4 py-1 md:p-2 lg:px-4" to="/portfolio" title="Active Link">포토폴리오</Link>
                         </li>
                     </ul>
                 </div>

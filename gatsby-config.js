@@ -1,4 +1,5 @@
 const siteConfig = require(`./config.js`);
+const tailwindcss = require(`tailwindcss`);
 
 module.exports = {
     siteMetadata: {
@@ -18,6 +19,7 @@ module.exports = {
             resolve: `gatsby-plugin-mdx`,
             options: {
                 extensions: [`.mdx`, `.md`],
+                remarkPlugins: [require("remark-math"), require("remark-html-katex")],
             }
         },
         {
@@ -38,7 +40,7 @@ module.exports = {
             resolve: `gatsby-plugin-sass`,
             options: {
                 postCssPlugins: [
-                    require("tailwindcss"),
+                    tailwindcss('./tailwind.config.js'),
                     require("autoprefixer"),
                 ],
             },

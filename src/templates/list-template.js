@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import CategoryCard from '../components/CategoryCard';
 
@@ -21,7 +21,7 @@ const PageTemplate = ({ data, pageContext }) => {
     const item = ({ slug, name }) => {
 
         return (
-            <li>
+            <li className="w-90 mx-5">
                 <CategoryCard/>
             </li>
         )
@@ -30,9 +30,9 @@ const PageTemplate = ({ data, pageContext }) => {
     //<CategoryCard data={list}/>
     return (
         <Layout>
-            <div className="container mx-auto my-10">
-                <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                    {data.allMdx.edges.map((e) => item(e.node.fields))}
+            <div className="container mx-auto my-10 ">
+                <ul className="grid grid-flow-col auto-cols-auto">
+                    {list.map((e) => item(e))}
                 </ul>
             </div>
         </Layout>

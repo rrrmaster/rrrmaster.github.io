@@ -41,10 +41,16 @@ const createPages = async ({ graphql, actions }) => {
 			path: slug,
 			component: path.resolve('./src/templates/post-template.js'),
 			context: { slug }
-
 		});
 	})
-
+	createPage({
+        path: '/portfolio',
+        component: path.resolve('./src/templates/portfolios-list-template.js'),
+    });
+	createPage({
+        path: '/tag',
+        component: path.resolve('./src/templates/tags-list-template.js'),
+    });
 	await createPostsPages(graphql, actions);
 }
 module.exports = createPages;
