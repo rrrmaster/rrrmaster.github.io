@@ -1,4 +1,4 @@
 module.exports = {
-
-	purge: ['./src/**/*.js']
-}
+    purge: ['./src/**/*.js']
+  };
+  
