@@ -4,7 +4,6 @@ import { getIcon } from "../../utils";
 import Icon from "../Icon";
 import style from "./CategoryCard.moudle.scss";
 
-import { ReactComponent as Unity } from "../../assets/icons/Unity.svg";
 const CategoryCard = ({ color, name }) => {
   return (
     <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
