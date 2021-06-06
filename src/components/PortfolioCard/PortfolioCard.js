@@ -1,7 +1,5 @@
 import { Link } from "gatsby";
 import React from "react";
-import { getIcon } from "../../utils";
-import Icon from "../Icon";
 
 const CategoryCard = ({ color, name }) => {
   return (

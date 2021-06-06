@@ -7,7 +7,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import "katex/dist/katex.min.css"
 const PageTemplate = ({ data, pageContext }) => {
 	return (
-		<Layout title={data.mdx.fields.name}>
+		<Layout title={"강좌" + data.mdx.fields.name}>
             <MDXProvider>
 			    <MDXRenderer>{data.mdx.body}</MDXRenderer>
             </MDXProvider>
