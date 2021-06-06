@@ -12,10 +12,8 @@ const Layout = ({ children, title, description, socialImage = '' }) => {
 				<title>{title}</title>
 			</Helmet>
 			<Header/>
-			<section >
-				<div className= "container min-h-screen md:mx-10">
-					{children}
-				</div>
+			<section className="min-h-screen">
+				{children}
 			</section>
             <Footer/>
 

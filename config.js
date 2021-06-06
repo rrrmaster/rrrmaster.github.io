@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+module.exports  = {
 	url: 'https://rrrmaster.github.com',
 	title: 'rrrmaster 블로그',
 	author: {
