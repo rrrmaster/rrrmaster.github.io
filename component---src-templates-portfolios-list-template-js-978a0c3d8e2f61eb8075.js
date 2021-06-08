@@ -1,0 +1,2 @@
+(self.webpackChunkrrrmaster_github_blog=self.webpackChunkrrrmaster_github_blog||[]).push([[519],{9918:function(t,e,r){"use strict";r.r(e);var a=r(7294),u=r(1463);e.default=function(t){t.data,t.pageContext;return a.createElement(u.Z,{title:"포토폴리오"})}}}]);
+//# sourceMappingURL=component---src-templates-portfolios-list-template-js-978a0c3d8e2f61eb8075.js.map

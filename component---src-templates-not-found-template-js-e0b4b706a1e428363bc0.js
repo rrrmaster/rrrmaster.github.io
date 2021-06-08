@@ -1,0 +1,2 @@
+(self.webpackChunkrrrmaster_github_blog=self.webpackChunkrrrmaster_github_blog||[]).push([[41],{8895:function(e,t,r){"use strict";r.r(t);var n=r(7294),u=r(1463);t.default=function(e){e.data,e.pageContext;return n.createElement(u.Z,{title:"Not Found"},n.createElement("p",null,"404 found"))}}}]);
+//# sourceMappingURL=component---src-templates-not-found-template-js-e0b4b706a1e428363bc0.js.map
