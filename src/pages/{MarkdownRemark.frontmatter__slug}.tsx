@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Header from "../components/Header";
 import dayjs from "dayjs";
+import Utterances from "../components/Utterances";
 
 export default function Template({ data }: any) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
@@ -13,7 +14,9 @@ export default function Template({ data }: any) {
       <main className="box-container mt-3 mx-auto">
         <div className="my-3">
           <h1>{frontmatter.title}</h1>
-          <span className="color-fg-subtle">작성일 : {date.format("YYYY년 MM월 DD일")}</span>
+          <span className="color-fg-subtle">
+            작성일 : {date.format("YYYY년 MM월 DD일")}
+          </span>
         </div>
         <div className="markdown-body">
           <div
@@ -21,6 +24,7 @@ export default function Template({ data }: any) {
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
+        <Utterances />
       </main>
     </div>
   );
