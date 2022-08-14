@@ -19,6 +19,7 @@
     "@primer/css": "^20.4.1",
     "dayjs": "^1.11.4",
     "gatsby": "^4.19.2",
+    "gatsby-plugin-google-analytics": "^4.20.0",
     "gatsby-plugin-manifest": "^4.20.0",
     "gatsby-plugin-sass": "^5.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
