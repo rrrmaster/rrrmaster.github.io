@@ -9,6 +9,7 @@ export const SEO = ({ title, children }: Props) => {
     <>
       <title>{title}</title>
       <meta name="description" content="Free Web tutorials" />
+      <meta name="google-site-verification" content="pfJ9bfzNh8_2M2YS7Zodeevi3iFu2F2bkyUIjwnR8bg" />
       {children}
     </>
   );
