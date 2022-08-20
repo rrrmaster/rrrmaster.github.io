@@ -3,12 +3,13 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `rrrmaster Blog Site`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://rrrmaster.github.io`,
   },
   graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
