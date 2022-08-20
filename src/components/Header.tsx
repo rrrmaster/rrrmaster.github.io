@@ -6,7 +6,12 @@ const Header = () => {
     <div className="Header">
       <div className="Header-item">
         <a href="#" className="Header-link f4 d-flex flex-items-center">
-          <span>rrrmaster</span>
+          <span>
+            {" "}
+            <Link to="/" className="Header-link">
+              rrrmaster
+            </Link>
+          </span>
         </a>
       </div>
       <div className="Header-item">
