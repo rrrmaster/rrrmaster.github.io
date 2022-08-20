@@ -31,7 +31,7 @@ const config: GatsbyConfig = {
             options: {
               inlineCodeMarker: null,
               aliases: {},
-              showLineNumbers: false,
+              showLineNumbers: true,
               noInlineHighlight: false,
               languageExtensions: [
                 {

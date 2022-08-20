@@ -12,16 +12,23 @@ export default function Template({ data }: any) {
     <Layout title="작성 글" description="">
       <div className="my-3">
         {edges.map((element: any, index: number) => (
-          <div key={index} className="pt-4 border-bottom d-flex flex-justify-between">
-            <div>
-              <p className="f3 lh-condensed mb-0 mt-1 Link--primary">
-                <Link to={element.node.frontmatter.slug}>
+          <div
+            key={index}
+            className="pt-4 border-bottom post"
+          >
+            <Link
+              className="color-fg-default no-underline"
+              to={element.node.frontmatter.slug}
+            >
+              <div className="w-100">
+                <p className="post-name f3 lh-condensed mb-0 mt-1">
                   {element.node.frontmatter.title}
-                </Link>
-              </p>
-              <p> {element.node.frontmatter.description}</p>
-              <p> {element.node.frontmatter.date}</p>
-            </div>
+                </p>
+                <p> {element.node.frontmatter.description}</p>
+                <p> {element.node.frontmatter.date}</p>
+              </div>
+
+            </Link>
           </div>
         ))}
       </div>

@@ -3,4 +3,17 @@
 
 .box-container {
     max-width:  $container-lg;
+    margin: auto;
+    @media screen and (max-width:$width-md) {
+        margin: 0 16px;
+    }
+}
+
+.post{
+    &:hover {
+        color: red;
+        .post-name {
+            @extend .color-fg-accent
+        }
+    }
 }

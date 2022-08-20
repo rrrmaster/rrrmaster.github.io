@@ -13,7 +13,7 @@ export const Layout = ({ title, description, children }: Props) => {
     <>
       <div>
         <Header />
-        <main className="box-container mt-3 mx-auto">{children}</main>
+        <main className="box-container pt-3 ">{children}</main>
       </div>
     </>
   );
