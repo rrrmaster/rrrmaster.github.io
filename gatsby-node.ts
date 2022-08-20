@@ -27,7 +27,7 @@ exports.createPages = async ({ graphql, actions }: any) => {
     createPage({
       path: `${slug}`,
       component: blogPostTemplate,
-      context: { slug: slug },
+      context: { slug: slug, title: edge.node.frontmatter.title },
     });
   });
 };

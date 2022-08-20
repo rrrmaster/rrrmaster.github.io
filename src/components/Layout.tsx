@@ -11,7 +11,6 @@ interface Props {
 export const Layout = ({ title, description, children }: Props) => {
   return (
     <>
-      <SEO title={title} description="" />
       <div>
         <Header />
         <main className="box-container mt-3 mx-auto">{children}</main>

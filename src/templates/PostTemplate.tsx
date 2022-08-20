@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import { graphql } from "gatsby";
 import React from "react";
 import { Layout } from "../components/Layout";
+import { SEO } from "../components/SEO";
 import Utterances from "../components/Utterances";
 
 const PostTemplate: React.FC = ({ data }: any) => {
@@ -25,6 +26,10 @@ const PostTemplate: React.FC = ({ data }: any) => {
       <Utterances />
     </Layout>
   );
+};
+export const Head = ({ location, params, data, pageContext }: any) => {
+  console.log()
+  return <SEO title={data.markdownRemark.frontmatter.title} />;
 };
 
 export const query = graphql`
