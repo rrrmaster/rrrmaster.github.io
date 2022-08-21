@@ -2,6 +2,8 @@
 slug: "/blog/test"
 date: "2019-05-04"
 title: "테스트 페이지"
+tags:
+  - "Test"
 description: "아아아아"
 ---
 

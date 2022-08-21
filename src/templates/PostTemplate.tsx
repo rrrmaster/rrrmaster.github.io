@@ -12,7 +12,7 @@ const PostTemplate: React.FC = ({ data }: any) => {
   return (
     <Layout title={frontmatter.title}>
       <div className="my-3">
-        <h1>{frontmatter.title}</h1>
+        <h1 className="post-title">{frontmatter.title}</h1>
         <span className="color-fg-subtle">
           작성일 : {date.format("YYYY년 MM월 DD일")}
         </span>
@@ -28,8 +28,8 @@ const PostTemplate: React.FC = ({ data }: any) => {
   );
 };
 export const Head = ({ location, params, data, pageContext }: any) => {
-  console.log()
-  return <SEO title={data.markdownRemark.frontmatter.title} />;
+  const { title, tags } = data.markdownRemark.frontmatter;
+  return <SEO title={title} tags={tags} />;
 };
 
 export const query = graphql`
@@ -40,6 +40,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        tags
       }
     }
   }

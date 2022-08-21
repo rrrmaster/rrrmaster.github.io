@@ -2,6 +2,9 @@
 slug: "/boj/14726"
 date: "2022-08-20"
 title: "[백준] 14726 - 신용카드 판별"
+tags:
+  - "BOJ"
+  - "Algorithm"
 description: "백준 온라인 저지 14726번 신용카드 판별 알고리즘 설명 및 풀이"
 ---
 

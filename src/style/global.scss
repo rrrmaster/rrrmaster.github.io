@@ -17,3 +17,9 @@
         }
     }
 }
+.post-title {
+    font-size: $h1-size;
+    @media screen and (max-width:$width-md) {
+        font-size: $h1-size-mobile;
+    } 
+}
