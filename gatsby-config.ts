@@ -64,7 +64,7 @@ const config: GatsbyConfig = {
       options: {
         name: `GatsbyJS`,
         short_name: `GatsbyJS`,
-        start_url: `/`,
+        start_url: `https://rrrmaster.github.io`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
@@ -74,13 +74,18 @@ const config: GatsbyConfig = {
             src: `/favicons/android-chrome-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
+            purpose: `any maskable`,
           },
           {
             src: `/favicons/android-chrome-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
+            purpose: `any maskable`,
           },
         ],
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     {
