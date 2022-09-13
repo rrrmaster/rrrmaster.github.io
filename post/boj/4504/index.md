@@ -5,7 +5,7 @@ title: "[백준] 4504 - 배수 찾기"
 tags:
   - "BOJ"
   - "Algorithm"
-description: "백준 온라인 저지 4504번 배수 찾기 문제이풀이"
+description: "백준 온라인 저지 4504번 배수 찾기 문제 풀이"
 ---
 
 ## 문제 링크
