@@ -91,14 +91,8 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "G-5602PCQB80",
-        head: false,
-        anonymize: true,
-        respectDNT: true,
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        pageTransitionDelay: 0,
-        defer: false,
-        enableWebVitalsTracking: true,
+        trackingId: `G-G-5602PCQB80`,
+        head: true,
       },
     },
   ],
