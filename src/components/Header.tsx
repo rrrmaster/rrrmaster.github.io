@@ -14,9 +14,14 @@ const Header = () => {
           About
         </Link>
       </div>
-      <div className="Header-item Header-item--full">
+      <div className="Header-item">
         <Link to="/blog" className="Header-link">
           Blog
+        </Link>
+      </div>
+      <div className="Header-item Header-item--full">
+        <Link to="/tags" className="Header-link">
+          Tags
         </Link>
       </div>
 
