@@ -15,6 +15,11 @@ export const SEO = ({ title, description, tags, children }: Props) => {
         content="pfJ9bfzNh8_2M2YS7Zodeevi3iFu2F2bkyUIjwnR8bg"
       />
       <meta name="keywords" content={tags?.join(", ")} />
+
+      <meta property="og:title" content="고수처럼 블로그" />
+      <meta property="og:url" content="https://rrrmaster.github.io/" />
+      <meta property="og:description" content="여러가지 개발을 좋아하는 20대 이상한 개발자"/>
+      <meta property="og:image" content="https://rrrmaster.github.io/opengrpah.png" />
       {children}
     </>
   );
