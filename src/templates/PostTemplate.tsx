@@ -28,8 +28,8 @@ const PostTemplate: React.FC = ({ data }: any) => {
   );
 };
 export const Head = ({ location, params, data, pageContext }: any) => {
-  const { title, tags } = data.markdownRemark.frontmatter;
-  return <SEO title={title} tags={tags} />;
+  const { title, tags, description } = data.markdownRemark.frontmatter;
+  return <SEO title={title} tags={tags} description={description} />;
 };
 
 export const query = graphql`
@@ -41,6 +41,7 @@ export const query = graphql`
         title
         date
         tags
+        description
       }
     }
   }
