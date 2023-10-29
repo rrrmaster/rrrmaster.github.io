@@ -17,6 +17,8 @@ export const SEO = ({ title, description ="", tags, children }: Props) => {
       <meta property="og:url" content="https://rrrmaster.github.io/" />
       <meta property="og:description" content="여러가지 개발을 좋아하는 20대 이상한 개발자" />
       <meta property="og:image" content="https://rrrmaster.github.io/opengrpah.png" />
+      
+      <meta name="naver-site-verification" content="799db7b90c08d295abf4b199f04b31a2c8fad02f" />
       {children}
     </>
   );
